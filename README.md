@@ -31,7 +31,7 @@ Flutter 기반 모바일 서비스를 설계하고 운영하는 개발자입니�
 
 * BLoC
 * GetX
-* Provider
+* Riverpod
 
 ### Native
 
