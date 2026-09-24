@@ -1,119 +1,127 @@
-# 전범수 | Flutter Mobile App Developer
+# 전범수
 
-Flutter 기반 모바일 서비스를 설계하고 운영하는 개발자입니다.
+Flutter 개발자 · 경력 3년 9개월
 
-단순히 화면을 구현하는 것을 넘어, 아키텍처 설계부터 개발·배포·운영까지 서비스 전 주기를 책임져 왔습니다.
+📧 [217wjs@naver.com](mailto:217wjs@naver.com) | 🐱 [github.com/DukeJeon](https://github.com/DukeJeon) | 📚 [velog.io/@217wjs](https://velog.io/@217wjs) | 🎂 1999.02.17
 
-배송 플랫폼, 헬스케어 서비스, 공공버스 앱, 무인 키오스크 등 다양한 도메인에서 실제 사용자를 대상으로 하는 서비스를 개발했으며, Flutter 패키지의 한계를 네이티브(Swift/Kotlin) 레벨에서 해결하며 안정적인 사용자 경험을 만드는 데 집중하고 있습니다.
+Flutter를 주력으로 앱의 설계부터 스토어 출시와 운영까지 맡아온 3년 9개월 차 모바일 개발자입니다.
 
----
+- 물류·헬스케어·무인 점포·공공 교통 등 다양한 도메인 서비스 경험
+- 기사·보호자 통학 앱 기획부터 Android·iOS 스토어 출시
+- 지오펜스 자동 승하차와 GPS 이상치 보정, 실주행으로 검증
+- 예약 WebSocket 전환과 재연결 시 상태 복구
+- 성공버스 일평균 크래시 200.2건→3.3건, 98.3% 감소
+- 공공버스 앱 8개를 프로젝트 2개로 통합
+- 차트 라이브러리 커스텀 및 혈당·인슐린 차트 확대·이동 동기화와 렌더링 최적화
 
-## 🚀 About Me
+다양한 도메인과 협업 구조 속에서 앱을 만들고 문제를 고치며 운영을 정리해온 개발자입니다.
 
-* Flutter 기반 모바일 앱 개발 경력 3년+
-* 배송 · 헬스케어 · 공공 교통 · 무인 플랫폼 서비스 개발 경험
-* 아키텍처 설계부터 App Store / Play Store 배포 및 운영 경험
-* 1인 전담 개발자로 서비스 설계 및 출시 경험
-* Swift / Kotlin 기반 Native Plugin 분석 및 커스터마이징
-* 공공버스 앱 Crash-free 99% 이상 달성
-* 사용자 경험을 고려한 인터랙션 및 애니메이션 구현
+## 🛠️ 기술
 
----
+Flutter · Dart · Android · iOS · Java · Swift · Kotlin · Clean Architecture · Riverpod · BLoC · GetX · REST API · WebSocket · Firebase · BLE · GitHub · Jira · Slack
 
-## 🛠 Tech Stack
+## 💼 경력
 
-### Mobile
+### 🚌 온버스
 
-* Flutter
-* Dart
+개발 · 대리/팀원 3년차 · 2026.03–2026.09 (7개월)
 
-### State Management
+기사용·보호자용 통학 앱 개발과 기존 Android·iOS 앱 16개 유지보수
 
-* BLoC
-* GetX
-* Riverpod
+#### 기사용·보호자용 통학 앱 · 신규
 
-### Native
+`Flutter` `Dart` `Clean Architecture` `Riverpod` `Firebase`
 
-* Swift
-* Kotlin
-* Method Channel
+- **기사용·보호자용 통학 앱 설계 및 Android·iOS 출시** — 기사용·보호자용 앱을 서버 개발자와 함께 기획하고, 설계부터 개발, 실주행 QA, 스토어 출시까지 담당했습니다. 기능별로 코드를 나누어 Clean Architecture를 적용하고 Riverpod으로 상태를 관리했으며, 인증·기기·네트워크·Firebase 코드는 core에 모아 프로젝트 전역에서 관리했습니다.
+- **지오펜스 기반 자동 승하차 기능 구현** — 운행을 시작하면 정류장 진입과 정차를 기록해 구역을 벗어날 때 서버로 전송합니다. 혼잡할 땐 다음 정류장에서 보낼 수 있고, 늦게 탄 승객은 확정 기록을 고쳐 반영할 수 있도록 작업했습니다.
+- **GPS 이상치 필터링과 위치 보정 개선** — 실주행에서 화면 경로가 실제와 달라, 좌표를 노선에 맞추던 방식을 바꿨습니다. 부정확하거나 오래된 좌표를 제외하고, 거리·시간·속도·방향과 후속 좌표로 튄 값을 걸러낸 뒤 Kalman Filter를 적용해 실주행과 도보로 검증했습니다.
+- **단위·위젯 테스트로 Core 라인 커버리지 약 80% 달성** — 단위·위젯 테스트로 GPS 이상치 처리, 승하차 동기화, 주요 화면을 검증했고, 두 앱 모두 Core 라인 커버리지 약 80%를 달성했습니다.
 
-### Backend & Infra
+[원더셔틀 for 스쿨 (보호자) App Store](https://apps.apple.com/us/app/%EC%9B%90%EB%8D%94%EC%85%94%ED%8B%80-for-%EC%8A%A4%EC%BF%A8-%EB%B3%B4%ED%98%B8%EC%9E%90/id6786963979) · [Play Store](https://play.google.com/store/apps/details?id=com.kcg.wondershuttle.school.guardian.android)
 
-* Firebase
-* FCM
-* Crashlytics
-* Analytics
-* Remote Config
+[원더셔틀 for 스쿨 (기사/동승자) App Store](https://apps.apple.com/us/app/%EC%9B%90%EB%8D%94%EC%85%94%ED%8B%80-for-%EC%8A%A4%EC%BF%A8-%EA%B8%B0%EC%82%AC-%EB%8F%99%EC%8A%B9%EC%9E%90/id6786960627) · [Play Store](https://play.google.com/store/apps/details?id=com.kcg.wondershuttle.school.driver.android)
 
-### Collaboration
+#### 기존 Android·iOS 앱 · 레거시
 
-* Git
-* GitLab
-* JIRA
-* Slack
+`Java` `Swift` `Android` `iOS`
 
----
+- **기존 Android·iOS 앱 16개 유지보수** — 기사용·보호자용 통학 앱 개발과 별도로, 이미 운영 중이던 Android·iOS 앱 16개를 유지보수했습니다.
+- **성공버스 일평균 크래시 98.3% 감소** — 크래시를 분석하여 고쳐 126(1.24)부터 배포하였고, 개선 전 28일 일평균 200.2건이던 크래시가 이후 4개월간 3.3건으로 줄었습니다. 남은 크래시는 강제 업데이트 적용 전 구버전에서만 발생하는 것으로 확인됐습니다.
+- **공공버스 앱 8개를 2개 프로젝트로 통합** — 성공버스·내편중구버스·노원행복버스·관악강감찬버스를 플랫폼마다 따로 두던 프로젝트 8개를, Android·iOS 각 하나의 프로젝트로 합쳤습니다. 앱마다 다른 부분은 Build Variants와 iOS Target 설정으로만 나눴습니다.
 
-## 💼 Career
+### 🏓 무브히
 
-| Period            | Company    | Position                   |
-| ----------------- | ---------- | -------------------------- |
-| 2026.03 ~ Present | OnBus      | Mobile Front-end Developer |
-| 2025.09 ~ 2026.01 | 무브히        | Front-end Developer        |
-| 2025.03 ~ 2025.07 | Curestream | Mobile Front-end Developer |
-| 2022.09 ~ 2024.12 | HWEGO      | Mobile Front-end Developer |
+사원/팀원 3년차 · 2025.09–2026.01 (5개월)
 
----
+무인 점포 예약 현황과 점수판을 표시하는 단말 앱 개발·운영
 
-## 🏆 Highlights
+#### 탁구발전소24
 
-### 🚌 OnBus
+`Flutter` `Dart` `BLoC` `WebSocket` `Firebase`
 
-공공버스 Android/iOS 앱 개발 및 유지보수
+- **WebSocket 도입과 재연결 시 예약 상태 복구** — 1초마다 폴링하던 예약 조회를 서버 개발자와 함께 WebSocket으로 전환했습니다. 연결이 끊기면 마지막 예약을 보여주고, 재연결 시 최신 데이터를 받아 취소된 건은 지우고 ID가 바뀐 건은 교체하며, 타이머는 시작 시간 기준으로 이어지도록 작업했습니다.
+- **오류 로그를 활용한 예약 미표시 문제 해결** — 계층과 메서드 정보를 담은 오류 로그를 로컬에 남기고 서버가 받은 뒤에만 삭제하도록 했습니다. 네트워크·MDM 기록과 대조한 결과 노후 네트워크 장비가 원인이었고, 교체 후 같은 증상은 재발하지 않았습니다.
+- **20개 지점·약 80대 단말 원격 관리** — Headwind MDM으로 방문 없이 단말을 재부팅하고 로그를 확인했습니다. 재부팅 후 앱이 자동 실행되도록 설정해, 20개 지점 약 80대를 원격으로 관리했습니다.
 
-* Flutter 패키지 내부 구조 분석 및 Native 코드 개선
-* 메모리 생명주기 및 예외 처리 구조 재설계
-* Crash-free 99% 이상 달성
+### 💉 큐어스트림
 
-### 🚚 HWEGO
+개발 · 연구원 2년차 · 2025.03–2025.07 (5개월)
 
-도심 물류 배송 플랫폼 앱 개발
+혈당·인슐린 데이터를 표시하는 헬스케어 앱 차트 개발과 코드 리팩토링
 
-* Flutter 앱 전담 개발
-* App Store / Play Store 배포 및 운영
-* Firebase 기반 사용자 행동 분석 및 장애 대응
-* 서비스 출시 이후 유지보수 및 기능 확장 수행
+#### 모두스트림
 
-### 🏓 Movehee
+`Flutter` `Dart` `BLoC` `BLE` `Firebase`
 
-무인 탁구 플랫폼 키오스크 앱 개발
+- **혈당·인슐린 차트 구현과 확대·이동 동기화** — 인슐린 막대 차트와 혈당 선 차트를 위아래로 배치하고 함께 확대·이동되도록 MIT 차트 라이브러리를 수정했습니다. InteractiveViewer로 제스처를 하나로 묶고, 차트를 뒤집을 때 바뀐 좌표에 맞춰 툴팁도 함께 수정했습니다.
+- **차트 데이터 클러스터링과 렌더링 최적화** — 24시간 데이터를 표시할 때 차트가 느려져, 확대 수준에 따라 데이터를 5분·30분·1시간·3시간 단위로 묶고 화면 밖 데이터는 그리지 않도록 했습니다.
+- **펌프 BLE 통신 코드의 가독성 개선** — 펌프 BLE 코드값이 배터리·주입·용량 중 무엇을 뜻하는지 정리하고, 각 메서드가 처리하는 상황을 주석으로 남겼습니다.
+- **코드 리뷰를 통한 안내 화면의 중복 코드 개선** — 단계마다 반복되던 AppBar와 여백을 공통 레이아웃으로 분리하자고 코드 리뷰에서 제안했고, 담당 개발자가 그 구조로 코드를 수정했습니다.
 
-* 아키텍처 설계부터 개발·배포까지 전담
-* 실제 운영 환경을 고려한 단말 제어 및 사용자 경험 설계
+### 📦 히얼위고
 
-### 🏥 Curestream
+개발부서 · 연구원/팀원 2년차 · 2022.09–2024.12 (2년 4개월)
 
-헬스케어 모바일 서비스 개발
+배송 라이더 앱의 모바일 개발을 전담해 UI·로직·API 구현부터 Android·iOS 스토어 배포·심사까지 맡았습니다.
 
-* Flutter 기반 사용자 서비스 개발
-* 의료 서비스 특성에 맞춘 UI/UX 구현 및 유지보수
+#### 탱고앤고
 
----
+`Flutter` `Dart` `GetX`
 
-## 💡 What I Value
+- **오프라인 스캔 데이터 동기화와 중복 전송 처리** — 물류창고 네트워크가 불안정해 스캔 데이터를 로컬에 먼저 저장한 뒤 네트워크가 연결되면 서버로 전송하도록 오프라인 우선으로 로직을 수정했습니다.
+- **송장 분할 전송과 실패 건 재시도 구현** — 회사 환경 내부에서가 아니라 외부 서버와도 통신하며 송장을 등록하기에 200건을 한 번에 보내면 타임아웃이 나서 30건 단위로 나눠 전송했습니다. 재시도는 실패한 송장만 다시 보내며, 서버 개선과 함께 200~300건 처리가 약 5초 안에 끝나도록 개선했습니다.
+- **행정동 경계 데이터를 활용한 배송 현황 지도 구현** — 시·구·동 선택 옆에 지도 보기를 추가해, QGIS로 단순화한 행정동 경계 위에서 배송 현황을 확인할 수 있게 했습니다. 표와 지도 중 선택한 보기는 SharedPreferences에 저장됩니다.
+- **시스템 오버레이를 통한 배송 위치 추적 제어** — flutter_overlay_window로 내비게이션 앱 사용 중에도 위치 추적을 켜고 끌 수 있게 했고, 배송 완료 시 사진 업로드로 이어지며 위치는 FusedLocationProviderClient로 받습니다.
+- **배송 완료 사진의 업로드 용량 절감** — 4~5MB 사진을 업로드 전 압축하되, 배송 호수를 읽을 수 있는 화질은 유지했습니다.
 
-* 사용자 경험을 고려한 인터랙션 설계
-* 유지보수 가능한 아키텍처 구축
-* 장애 원인을 근본적으로 해결하는 문제 해결 방식
-* 개발뿐 아니라 운영까지 고려한 서비스 관점의 접근
+[탱고앤고 App Store](https://apps.apple.com/kr/app/id1568302767) · [Play Store](https://play.google.com/store/apps/details?id=com.hwego.flutterRider)
 
----
+## 🌱 사이드 프로젝트
 
-## 📫 Contact
+### 🍣 픽어라운드
 
-* Email: [217wjs@naver.com](mailto:217wjs@naver.com)
-* Email: [217wjs@gmail.com](mailto:217wjs@gmail.com)
-* GitHub: https://github.com/DukeJeon
-* Blog: https://velog.io/@217wjs
+어라운드 · 1명 · 2025.12
+
+`bubble.io` `TossPayments` `Amplitude`
+
+횟감 추천과 어종 안내부터 주문·결제까지 되는 웹 MVP로, bubble.io·TossPayments·웹훅·Amplitude를 활용했습니다.
+
+### 🧽 제일스폰지
+
+사이드 · PM, 디자인, 개발 1인
+
+`Flutter` `Dart` `Supabase` `Firebase`
+
+스폰지·스포츠 용품 업체 홈페이지를 Flutter 웹으로 새로 구축하며 기획·디자인·개발·배포를 전담했습니다.
+
+[jisponge.co.kr](https://www.jisponge.co.kr/)
+
+## 👩‍🏫 학력
+
+- 2024.07–2025.02 학점은행제 컴퓨터공학 학사
+- 2020.03–2023.02 영진전문대학 컴퓨터정보계열, 학점 4.14/4.5
+- 2015.03–2018.02 경북기계공업고등학교 공업전자과
+
+📜 정보처리산업기사, 2022.06, 한국산업인력공단
+
+🪖 육군 병장 만기전역, 2018.05–2020.01
