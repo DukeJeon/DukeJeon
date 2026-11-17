@@ -2,7 +2,7 @@
 
 Flutter 개발자 · 경력 3년 9개월
 
-📧 [217wjs@naver.com](mailto:217wjs@naver.com) | 🐱 [github.com/DukeJeon](https://github.com/DukeJeon) | 📚 [velog.io/@217wjs](https://velog.io/@217wjs) | 🌐 [이력서](https://dukejeon-c56e3.web.app) | 🎂 1999.02.17
+📧 [217wjs@naver.com](mailto:217wjs@naver.com) | 🐱 [github.com/DukeJeon](https://github.com/DukeJeon) | 📚 [velog.io/@217wjs](https://velog.io/@217wjs) | 🌐 [이력서](https://duke-jeon.xyz) | 🎂 1999.02.17
 
 Flutter를 주력으로 물류·헬스케어·무인 점포·공공 교통 서비스를 개발·운영해 온 경력 3년 9개월의 모바일 개발자입니다.
 
